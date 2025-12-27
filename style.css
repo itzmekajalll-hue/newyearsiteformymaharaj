@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@600;800&family=Montserrat:wght@300;600;900&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  color:white;
+  overflow:hidden;
+  font-family:'Montserrat',sans-serif;
+}
+
+/* ---------- PAGE TRANSITION ---------- */
+.fade-in{ animation:fade 1.2s ease; }
+@keyframes fade{ from{opacity:0} to{opacity:1} }
+
+/* ---------- TITLES ---------- */
+.lux-title{
+  font-family:'Cinzel';
+  font-size:48px;
+  text-align:center;
+  margin-top:10vh;
+  animation:royalGlow 3s infinite alternate;
+}
+@keyframes royalGlow{
+  from{ text-shadow:0 0 12px #ff7bd6,0 0 25px #ff2d75; }
+  to{ text-shadow:0 0 35px #ffd8ff,0 0 65px #ff2d75; }
+}
+
+.signature{
+  font-family:'Great Vibes';
+  font-size:38px;
+  text-align:center;
+  margin-top:6px;
+  color:#ffc7ff;
+}
+
+.nick{
+  background:linear-gradient(45deg,#ff4fcf,#ffd1ff);
+  -webkit-background-clip:text;
+  color:transparent;
+  font-weight:900;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  padding:14px 34px;
+  border-radius:40px;
+  border:none;
+  background:white;
+  color:#ff2d75;
+  font-weight:900;
+  font-size:17px;
+  cursor:pointer;
+  margin-top:28px;
+  transition:.35s;
+}
+.btn:hover{transform:scale(1.12); box-shadow:0 0 26px #ffb1ec;}
+
+/* ---------- MUSIC BUTTON ---------- */
+.music-btn{
+  position:fixed;
+  top:18px;
+  right:18px;
+  padding:10px 16px;
+  border-radius:30px;
+  border:none;
+  font-weight:800;
+  cursor:pointer;
+}
+
+/* ---------- HEARTS ---------- */
+.faller{position:fixed;top:-10px;font-size:20px;animation:fall linear forwards;opacity:.95;}
+@keyframes fall{ to{ transform:translateY(115vh) rotate(360deg); opacity:0; } }
+
+/* ---------- FIREWORKS ---------- */
+#fireworks{ position:fixed; inset:0; pointer-events:none; }
+
+/* ---------- BACKGROUNDS ---------- */
+.page-one{ background:radial-gradient(circle,#2a0060,#080015,#000); }
+.page-two{ background:linear-gradient(#16003b,#4a03a0,#7b14ff); text-align:center; }
+.page-three{ background:linear-gradient(#010610,#13195a,#4c1d95); text-align:center; text-align:center; }
+
+/* ---------- ENVELOPE ---------- */
+.envelope-wrapper{ margin-top:60px; }
+.envelope{ width:350px; height:220px; margin:auto; border-radius:12px; background:#ffe1ec; position:relative; overflow:hidden; box-shadow:0 0 28px #ff9edc; animation:breathe 2.5s infinite; }
+@keyframes breathe{50%{transform:scale(1.03);} }
+
+.flap{ position:absolute; width:100%; height:100%; background:#ffb4d8; transform-origin:top; transition:.9s; }
+
+.letter-large{
+  position:absolute;
+  width:95%;
+  left:2.5%;
+  top:105%;
+  background:white;
+  color:#333;
+  padding:25px;
+  border-radius:10px;
+  font-size:18px;
+  line-height:1.6;
+  transition:1.2s;
+  box-shadow:0 0 18px #ffb6e8;
+}
+
+.open .flap{ transform:rotateX(180deg); }
+.open .letter-large{ top:8%; }
+
+/* ---------- FINAL PAGE ---------- */
+.love-text{ font-family:'Cinzel'; font-size:52px; margin-top:18vh; animation:neon 2.2s infinite; }
+@keyframes neon{0%{text-shadow:0 0 10px #ff4fd8;} 100%{text-shadow:0 0 36px #ffc6ff;}}
+
+.float-soft{ width:70%; margin:24px auto; opacity:.9; animation:drift 8s infinite alternate; }
+@keyframes drift{ to{transform:translateY(-12px);} }
+
+/* ---------- 3D HEARTS ---------- */
+.heart-3d-container div{ position:fixed; font-size:22px; animation:float 6s infinite linear; }
+@keyframes float{ from{transform:translateY(100vh) rotate(0);} to{transform:translateY(-10vh) rotate(360deg);} }
