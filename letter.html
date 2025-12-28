@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Your Letter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Heart's Letter 🤍</title>
+
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
-<body class="page-two fade-in">
 
-<h2 class="lux-title">A Letter For My Heart 💌</h2>
+<body>
 
-<div class="signature">
-  To my <span class="nick">Sharmile Maharaj</span>
+<div id="effect-layer"></div>
+
+<div class="letter-sheet">
+
+<h2 class="letter-heading">
+To my Sharmile Maharaj — my Sigma Boy 💞
+</h2>
+
+<p>
+Sometimes words fall short… but still I try 
+because you matter that much to me 🤍
+</p>
+
+<p>
+You can acheive everything, my champ.  
+Never doubt yourself — never rush — don’t stress.  
+You are stronger than your worries… smarter than your fears ✨
+</p>
+
+<p>
+My Naughty Maharaj…my hero…my beta jii   
+even on tough days, I’ll stand beside you.
+I’m proud of you — always.
+</p>
+
+<p>
+This year…I hope life becomes softer for you,
+and I hope destiny keeps bringing us closer 🕊️
+</p>
+
+<p class="closing">
+With love… care… warmth…  
+from your mommy — always 💗
+</p>
+
+<button class="btn" onclick="goToFinal()">Continue ❤️</button>
+<button class="btn music-btn" onclick="toggleMusic()">🎵 Music</button>
+
 </div>
 
-<div class="envelope-wrapper">
-
-  <div class="envelope">
-    <div class="flap"></div>
-
-    <div class="letter-large">
-      <p>
-        My gentle king… my quiet strength 💝<br><br>
-
-        You may not express much —  
-        but your love speaks beautifully in silence ✨<br><br>
-
-        Whatever I do… comes from my heart —  
-        only to make my  
-        <span class="nick">Sigma & Naughty Boy</span> smile 💞<br><br>
-
-        I am proud of you today & always.  
-        You mean the world to me ❤️
-      </p>
-    </div>
-  </div>
-
-  <div class="seal" onclick="openLetter()">
-    🔒 Tap The Royal Seal
-  </div>
-
-  <button class="btn" onclick="goToFinal()">
-    ➜ Continue
-  </button>
-
-</div>
+<audio id="bg-music">
+<source src="song.mp3">
+</audio>
 
 </body>
 </html>
